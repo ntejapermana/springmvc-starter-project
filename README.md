@@ -11,3 +11,9 @@ This starter project use java config, without xml configuration
 - Spring Security
 - Spring Data JPA
 - Hibernate
+- Thymeleaf framework
+
+# jpa-xmlconfig
+
+This starter project same as jpa-javaconfig. But, it is using xml configuration
+
