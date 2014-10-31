@@ -1,4 +1,4 @@
-package com.duskclouds.habit.config;
+package com.starter.springmvc.config;
 
 import javax.sql.DataSource;
 

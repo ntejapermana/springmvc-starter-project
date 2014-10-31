@@ -1,4 +1,4 @@
-package com.duskclouds.habit.config;
+package com.starter.springmvc.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -22,7 +22,7 @@ import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "com.duskclouds.habit.controller" })
+@ComponentScan(basePackages = { "com.starter.springmvc.web.controller" })
 public class WebConfig extends WebMvcConfigurerAdapter {
 	
 	@Override

@@ -1,4 +1,4 @@
-package com.duskclouds.habit.config;
+package com.starter.springmvc.config;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
