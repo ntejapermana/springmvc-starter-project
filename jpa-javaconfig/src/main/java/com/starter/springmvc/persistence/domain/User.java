@@ -1,9 +1,13 @@
 package com.starter.springmvc.persistence.domain;
 
 import java.io.Serializable;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -16,6 +20,9 @@ public class User implements Serializable {
 	private String username;
 	private String password;
 	private int enabled;
+	
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="user")
+	private Set<Authority> authorities;
 	
 	public User() {}
 
@@ -47,6 +54,14 @@ public class User implements Serializable {
 
 	public void setEnabled(int enabled) {
 		this.enabled = enabled;
+	}
+
+	public Set<Authority> getAuthorities() {
+		return authorities;
+	}
+
+	public void setAuthorities(Set<Authority> authorities) {
+		this.authorities = authorities;
 	}
 	
 }
