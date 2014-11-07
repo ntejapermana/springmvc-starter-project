@@ -22,7 +22,7 @@ public class User implements Serializable {
 	private int enabled;
 	
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="user")
-	private Set<Authority> authorities;
+	private Set<Authority> roles;
 	
 	public User() {}
 
@@ -56,12 +56,12 @@ public class User implements Serializable {
 		this.enabled = enabled;
 	}
 
-	public Set<Authority> getAuthorities() {
-		return authorities;
+	public Set<Authority> getRoles() {
+		return roles;
 	}
 
-	public void setAuthorities(Set<Authority> authorities) {
-		this.authorities = authorities;
+	public void setRoles(Set<Authority> roles) {
+		this.roles = roles;
 	}
 	
 }

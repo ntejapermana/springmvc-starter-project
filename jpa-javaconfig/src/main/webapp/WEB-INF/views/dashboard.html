@@ -85,15 +85,24 @@
 							<tr>
 								<th th:text="#{users.list.header.name}">Name</th>
 								<th th:text="#{users.list.header.authorities}">Authorities</th>
+								<th th:text="#{users.list.header.actions}">Actions</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr th:each="user : ${users}">
 								<td th:text="${user.username}">User</td>
 								<td th:text="${user.authorities}">USER</td>
+								<td><a th:href="@{/user/edit(username=${user.username})}">
+										<span th:text="#{users.list.actions.edit}">Edit</span>
+									</a> | 
+									<a th:href="@{/user/delete(username=${user.username})}">
+										<span th:text="#{users.list.actions.delete}">Delete</span>
+									</a>
+								</td>
 							</tr>
 						</tbody>
 					</table>
+					<a class="btn btn-primary btn-sm" role="button">Add new User</a>
 				</div>
 			</div>
 		</div>

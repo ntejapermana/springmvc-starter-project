@@ -22,7 +22,7 @@ public class UserAdministrationServiceImpl implements UserAdministrationService 
 		List<UserData> userData = new ArrayList<>();
 		for(User user : userRepository.findAll()) {
 			UserData data = new UserData(user.getUsername(), user.getPassword(), user.getEnabled());
-			for(Authority auth : user.getAuthorities()) {
+			for(Authority auth : user.getRoles()) {
 				data.addAuthority(auth.getAuthority());
 			}
 			userData.add(data);
