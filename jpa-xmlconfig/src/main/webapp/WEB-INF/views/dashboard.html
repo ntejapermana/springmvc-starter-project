@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<link rel="icon" href="http://getbootstrap.com/favicon.ico"></link>
+	
+	<title>Dashboard Template for Bootstrap</title>
+	
+	<!-- Bootstrap core CSS -->
+    <link type="text/css" rel="stylesheet" href="../../resources/css/bootstrap.css" 
+    		th:href="@{/resources/css/bootstrap.css}" ></link>
+	
+	<!-- Custom styles for this template -->
+    <link type="text/css" rel="stylesheet" href="../../resources/css/dashboard.css" 
+    		th:href="@{/resources/css/dashboard.css}" ></link>
+	
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<script type="text/css" src="../../resources/js/ie-emulation-modes-warning.js" 
+    	th:href="@{/resources/js/ie-emulation-modes-warning.js}"></script>
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+	<div th:include="layout :: login-header"></div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div th:include="layout :: side-menu"></div>
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<h1 class="page-header">Dashboard</h1>
+
+				<div class="row placeholders">
+					<div class="col-xs-6 col-sm-3 placeholder">
+						<img
+							src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4="
+							data-src="holder.js/200x200/auto/sky" class="img-responsive"
+							alt="200x200"/>
+						<h4>Label</h4>
+						<span class="text-muted">Something else</span>
+					</div>
+					<div class="col-xs-6 col-sm-3 placeholder">
+						<img
+							src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4="
+							data-src="holder.js/200x200/auto/vine" class="img-responsive"
+							alt="200x200"/>
+						<h4>Label</h4>
+						<span class="text-muted">Something else</span>
+					</div>
+					<div class="col-xs-6 col-sm-3 placeholder">
+						<img
+							src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4="
+							data-src="holder.js/200x200/auto/sky" class="img-responsive"
+							alt="200x200"/>
+						<h4>Label</h4>
+						<span class="text-muted">Something else</span>
+					</div>
+					<div class="col-xs-6 col-sm-3 placeholder">
+						<img
+							src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4="
+							data-src="holder.js/200x200/auto/vine" class="img-responsive"
+							alt="200x200"/>
+						<h4>Label</h4>
+						<span class="text-muted">Something else</span>
+					</div>
+				</div>
+				<h2 class="sub-header" th:text="#{users.list}">Section title</h2>
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th th:text="#{users.list.header.name}">Name</th>
+								<th th:text="#{users.list.header.authorities}">Authorities</th>
+								<th th:text="#{users.list.header.actions}">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr th:each="user : ${users}">
+								<td th:text="${user.username}">User</td>
+								<td th:text="${user.authorities}">USER</td>
+								<td><a th:href="@{/user/edit(username=${user.username})}">
+										<span th:text="#{users.list.actions.edit}">Edit</span>
+									</a> | 
+									<a th:href="@{/user/delete(username=${user.username})}">
+										<span th:text="#{users.list.actions.delete}">Delete</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<a class="btn btn-primary btn-sm" role="button">Add new User</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->    
+    <script type="text/css" src="../../resources/js/jquery.js" 
+    		th:href="@{/resources/js/jquery/jquery.js}"></script>
+    <script type="text/css" src="../../resources/js/bootstrap.js" 
+    		th:href="@{/resources/js/bootstrap.js}"></script>   
+    <script type="text/css" src="../../resources/js/docs.js" 
+    		th:href="@{/resources/js/docs.js}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script type="text/css" src="../../resources/js/ie10-viewport-bug-workaround.js" 
+    		th:href="@{/resources/js/ie10-viewport-bug-workaround.js}"></script>
+</body>
+</html>
